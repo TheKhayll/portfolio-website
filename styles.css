@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+
+    /* Enable smooth scrolling for the entire document */
+    scroll-behavior: smooth;
+
+}
+
+:root {
+  --bg-color: #37353E;       
+  --second-bg-color: #44444E;  
+  --text-color: #D3DAD9;       
+  --main-color: #715A5A;       
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+/* Header Content */
+
+.header {
+    position: fixed;
+    width: 100%;
+
+    /* Place it on the top-left corner */
+    top: 0;
+    left: 0;
+
+    padding: 4rem 5%;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#menu-icon {
+    font-size: 3rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover {
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
+span {
+    background: linear-gradient(
+        270deg,
+        #7e6464 10%,
+        #382d2d 100%
+    );
+
+    /* Replaces the gradient color as the color of the text */
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* Section Settings */
+
+section {
+    min-height: 100vh;
+    padding: 10rem 5%;
+}
+
