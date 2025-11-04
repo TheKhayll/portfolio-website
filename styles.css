@@ -16,6 +16,7 @@
   --second-bg-color: #44444E;  
   --text-color: #D3DAD9;       
   --main-color: #715A5A;       
+  --light-brown-color: #b38e8e;    
 }
 
 html {
@@ -244,4 +245,71 @@ section {
 
 .about-content .btn {
     font-size: 2rem;
+}
+
+
+/* Skills Content */
+.skills {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.heading {
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+
+.skills h2 {
+    color: var(--text-color);
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: center;
+    gap: 3rem;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.skill-box:hover {
+    background: var(--second-bg-color);
+    color: var(--light-brown-color);
+    border: 3px solid var(--main-color);
+    transform: scale(1.05);
+}
+
+.skill-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.skill-info h4 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+.skill-info p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.skill-info i {
+    font-size: 8rem;
 }
