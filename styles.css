@@ -200,3 +200,48 @@ section {
     background: var(--text-color);
     color: var(--main-color);
 }
+
+
+/* About Content */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: var(--second-bg-color);
+}
+
+.dev-about-img img{
+    width: 20vw;
+    border-radius: 50%;
+
+    /* Glowing Effect */
+    box-shadow: 0 0 30px var(--main-color);
+    
+    transition: 0.4s ease-in-out;
+}
+.dev-about-img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px var(--main-color),
+                0 0 60px var(--main-color),
+                0 0 90px var(--main-color);
+}
+
+.about-content h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.7;
+    max-width: 70ch;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.about-content .btn {
+    font-size: 2rem;
+}
