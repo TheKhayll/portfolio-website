@@ -405,6 +405,21 @@ section {
     font-size: 1.6rem;
 }
 
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    border: 2px solid transparent;
+}
+
+.video-container video {
+    pointer-events: none;
+    user-select: none;
+}
+
+
+
 
 /* Contact Content */
 .contact {
