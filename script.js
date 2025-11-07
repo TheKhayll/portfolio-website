@@ -1,3 +1,13 @@
+// Drop-down menu
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x'); // Change icon to 'X' icon
+    navbar.classList.toggle('active'); // Show/hide navbar
+}
+
+
 // Parallax for Home Section
 
 let dot = document.getElementById('home-dot');
@@ -30,3 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
 projVideo.addEventListener('contextmenu', e => e.preventDefault());
 projVideo.addEventListener('click', e => e.preventDefault());
 projVideo.addEventListener('pause', e => e.preventDefault());
+
+
+// Read More Toggle
+const toggleBtn = document.getElementById('toggleReadMoreBtn');
+const readMoreInfo = document.getElementById('read-more-content');
+
+toggleBtn.addEventListener('click', () => {
+    let isVisible = readMoreInfo.classList.toggle('show'); // Toggle Show Read More Content
+    toggleBtn.textContent = isVisible ? 'Collapse' : 'Read More'; // Change the Text in the Button
+});
+
+
+// Clear form
+
+window.onload = function() {
+    // Reset the form fields when the page loads
+    document.getElementById("form").reset();
+};
